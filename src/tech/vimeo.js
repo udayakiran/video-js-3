@@ -68,9 +68,7 @@ _V_.vimeo = _V_.PlaybackTech.extend({
   },
 
   loadPlayer: function(videoId){
-    var baseUrl = (document.location.protocol == 'https:') ?
-      'https://secure.vimeo.com/video/' :
-      'http://player.vimeo.com/video/';
+    var baseUrl = '//player.vimeo.com/video/';
 
     // Wait until iFrame has loaded to initialize the API
     _V_.addEvent(this.el, "load", _V_.proxy(this, function(){
